@@ -58,3 +58,17 @@
 // const numString = num.join('*')
 // console.log(numString)
 // console.log(num.sort().reverse())
+
+function isPasswordValid(password) {
+  if (password === null || password === undefined) {
+    return false;
+  }
+
+  const length = password.length >= 8;
+  const num = password.match(/[0-9]/);
+  const lower = password.match(/[a-z]/);
+  const upper = password.match(/[A-Z]/);
+  const special = password.match(/[@#$%^&*!]/);
+
+  return length && num && lower && upper && special ? true : false;
+}

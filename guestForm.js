@@ -1,5 +1,3 @@
-//65130500023 Tinnapop Tienbang
-
 // import { createGuestList } from './data/guestdata.js'
 const createGuestList = require('./data/guestdata.js')
 
